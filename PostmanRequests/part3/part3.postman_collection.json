@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "f266763d-2206-480b-9274-31959acd5bfc",
+		"name": "part3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39706249"
+	},
+	"item": [
+		{
+			"name": "getMe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/getMe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUpdates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/getUpdates",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"getUpdates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/sendMessage?chat_id=1424326636&text=Heyyy, how are you?",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1424326636"
+						},
+						{
+							"key": "text",
+							"value": "Heyyy, how are you?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendPhoto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "19d1b9d17aed2c1fbab42685d34a25f6.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/sendPhoto?chat_id=1424326636&caption=Here%20is%20an%20elf",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1424326636"
+						},
+						{
+							"key": "caption",
+							"value": "Here%20is%20an%20elf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendPhoto pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "document",
+							"type": "file",
+							"src": "Hatsune_Miku_Magical_Mirai_2019_templates.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/sendPhoto?chat_id=1424326636&caption=Here%20is%20an%20elf",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1424326636"
+						},
+						{
+							"key": "caption",
+							"value": "Here%20is%20an%20elf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendDocument",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "document",
+							"type": "file",
+							"src": "Ответы на билеты.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/sendDocument?chat_id=1424326636&caption=Here%20is%20an%20elf",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"sendDocument"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1424326636"
+						},
+						{
+							"key": "caption",
+							"value": "Here%20is%20an%20elf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserProfilePhotos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `",
+							"<style type=\"text/css\">",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+							"    .tftable tr {background-color:#ffffff;}",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+							"    .tftable tr:hover {background-color:#e0ffff;}",
+							"</style>",
+							"",
+							"<table class=\"tftable\" border=\"1\">",
+							"    <tr>",
+							"        <th>File ID</th>",
+							"        <th>File Unique ID</th>",
+							"        <th>File Size</th>",
+							"        <th>Width</th>",
+							"        <th>Height</th>",
+							"    </tr>",
+							"    ",
+							"    {{#each response.result.photos}}",
+							"        <tr>",
+							"            <td>{{this.0.file_id}}</td>",
+							"            <td>{{this.0.file_unique_id}}</td>",
+							"            <td>{{this.0.file_size}}</td>",
+							"            <td>{{this.0.width}}</td>",
+							"            <td>{{this.0.height}}</td>",
+							"        </tr>",
+							"    {{/each}}",
+							"</table>",
+							"`;",
+							"",
+							"function constructVisualizerPayload() {",
+							"    return { response: pm.response.json() }",
+							"}",
+							"",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ/getUserProfilePhotos?user_id=1424326636&limit=2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7413525727:AAF3JS5fMhqx0dk6d9k1lxvR2Yofl4ilYeQ",
+						"getUserProfilePhotos"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1424326636"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

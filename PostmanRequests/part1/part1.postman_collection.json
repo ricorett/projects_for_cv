@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "b2c90aaa-fc2a-4eb9-af91-dfc6cc5284f7",
+		"name": "part1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39706249"
+	},
+	"item": [
+		{
+			"name": "linux",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Linux&sortBy=popular&apiKey=3c640ccef2364577af0a3126239796cc",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Linux"
+						},
+						{
+							"key": "sortBy",
+							"value": "popular"
+						},
+						{
+							"key": "apiKey",
+							"value": "3c640ccef2364577af0a3126239796cc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "development_in_ru",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `",
+							"<style type=\"text/css\">",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+							"    .tftable tr {background-color:#ffffff;}",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+							"    .tftable tr:hover {background-color:#e0ffff;}",
+							"</style>",
+							"",
+							"<table class=\"tftable\" border=\"1\">",
+							"    <tr>",
+							"        <th>Author</th>",
+							"        <th>Title</th>",
+							"        <th>Description</th>",
+							"        <th>Published At</th>",
+							"    </tr>",
+							"    ",
+							"    {{#each response.articles}}",
+							"        <tr>",
+							"            <td>{{author}}</td>",
+							"            <td>{{title}}</td>",
+							"            <td>{{description}}</td>",
+							"            <td>{{publishedAt}}</td>",
+							"        </tr>",
+							"    {{/each}}",
+							"</table>",
+							"`;",
+							"",
+							"function constructVisualizerPayload() {",
+							"    return {response: pm.response.json()}",
+							"}",
+							"",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=it-development&contry=ru&from=2024-10-31&apiKey={{API_KEY}}&language=ru",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "it-development"
+						},
+						{
+							"key": "contry",
+							"value": "ru"
+						},
+						{
+							"key": "from",
+							"value": "2024-10-31"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linux_on_page_ru",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Linux&contry=ru&language=ru&page=3&pageSize=10&apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Linux"
+						},
+						{
+							"key": "contry",
+							"value": "ru"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "headlines_science",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?q=science&apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "science"
+						},
+						{
+							"key": "country",
+							"value": "ru",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "ru",
+							"disabled": true
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "API_KEY",
+			"value": "3c640ccef2364577af0a3126239796cc"
+		}
+	]
+}

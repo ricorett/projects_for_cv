@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "81c24b9c-833f-424c-9338-1fbb6e4ccd7f",
+		"name": "part2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39706249"
+	},
+	"item": [
+		{
+			"name": "hh_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "fgsscgib-w-hh=nLkEe08f61ff84850b6e83a893c5ff195151d20e; gsscgib-w-hh=ut84P/aD0N5fXIZszP6L7yTWOiVJTKSK5naNk8wYTItjNuea8b/Ji116hGgPIuKvm7FbqFzjVBBNj0kdyzT4pcO9jH43Z6nBgMiTB2kh63rqSZX1/yacv/SV6zhCDqcqduyjuPz82VrL9XZmHBdmHfQWCe5M6h2AczTq/VcyJ18RyPZnJud1I6Ju/2MF7zTKd4/i/N2bUd2Fi4bNo8bILpIB9vWcucxJa2DLL0mRRAzPSvcw3zmmPLQxkxZRBr0+mcHV9LVzgtUW/B5z3w==; fgsscgib-w-hh=nLkEe08f61ff84850b6e83a893c5ff195151d20e; gsscgib-w-hh=ut84P/aD0N5fXIZszP6L7yTWOiVJTKSK5naNk8wYTItjNuea8b/Ji116hGgPIuKvm7FbqFzjVBBNj0kdyzT4pcO9jH43Z6nBgMiTB2kh63rqSZX1/yacv/SV6zhCDqcqduyjuPz82VrL9XZmHBdmHfQWCe5M6h2AczTq/VcyJ18RyPZnJud1I6Ju/2MF7zTKd4/i/N2bUd2Fi4bNo8bILpIB9vWcucxJa2DLL0mRRAzPSvcw3zmmPLQxkxZRBr0+mcHV9LVzgtUW/B5z3w==; __ddg10_=1731678201; __ddg8_=gkgUrOhFfk69Xwpe; __ddg9_=147.45.42.229; _xsrf=0720ae87768840fee1993198a82bf39b; crypted_hhuid=C20CCF8BA048125DA5F079A1D7B091BD2D00499A4521CD187047011EB207BD00; hhrole=anonymous; device_breakpoint=m; device_magritte_breakpoint=m; display=desktop; tmr_detect=0%7C1731678191675; cfidsgib-w-hh=uwtkR+kihVyLFe8n8xB+Y7diL/0Nxzf8fTVSKNWmZ6J8sPYpCA+Jd76Y5sajXvdI6ap8ofsnNTqie/tqSpP2kKSzbHPetvFqfLihAayckKukxjoJZIPNOqGjsMLpi9LPJvQ3szKlFEN76FxKDXAjFewdP/hkMiki5lHqogw=; cfidsgib-w-hh=uwtkR+kihVyLFe8n8xB+Y7diL/0Nxzf8fTVSKNWmZ6J8sPYpCA+Jd76Y5sajXvdI6ap8ofsnNTqie/tqSpP2kKSzbHPetvFqfLihAayckKukxjoJZIPNOqGjsMLpi9LPJvQ3szKlFEN76FxKDXAjFewdP/hkMiki5lHqogw=; cfidsgib-w-hh=uwtkR+kihVyLFe8n8xB+Y7diL/0Nxzf8fTVSKNWmZ6J8sPYpCA+Jd76Y5sajXvdI6ap8ofsnNTqie/tqSpP2kKSzbHPetvFqfLihAayckKukxjoJZIPNOqGjsMLpi9LPJvQ3szKlFEN76FxKDXAjFewdP/hkMiki5lHqogw=; gsscgib-w-hh=ut84P/aD0N5fXIZszP6L7yTWOiVJTKSK5naNk8wYTItjNuea8b/Ji116hGgPIuKvm7FbqFzjVBBNj0kdyzT4pcO9jH43Z6nBgMiTB2kh63rqSZX1/yacv/SV6zhCDqcqduyjuPz82VrL9XZmHBdmHfQWCe5M6h2AczTq/VcyJ18RyPZnJud1I6Ju/2MF7zTKd4/i/N2bUd2Fi4bNo8bILpIB9vWcucxJa2DLL0mRRAzPSvcw3zmmPLQxkxZRBr0+mcHV9LVzgtUW/B5z3w==; _ym_visorc=w; hhuid=328kTZZdp3wABGNGzQYp5w--; tmr_lvid=eac2e9195384bb99b02e3c594a2ae25a; tmr_lvidTS=1727248796950; GMT=3; regions=2061; total_searches=3; __zzatgib-w-hh=MDA0dC0jViV+FmELHw4/aQsbSl1pCENQGC9LXzAxQSFPYnkVJ0ZaTjZZSxQwKFYLPA4URXVue11CZ08YOVURCxIXRF5cVWl1FRpLSiVueCplJS0xViR8SylEXFB5JhwTe3IoUAoNVy8NPjteLW8PKhMjZHYhP04hC00+KlwVNk0mbjN3RhsJHlksfEspNQ5SNVkfRn1zWE9/QV1ERCt4KzxpHR1MXVVIDwkIW09CfygpDDwNGXMzaWVpcC9gIBIlEU1HGEVkW0I2KBVLcU8cenZffSpCaB1gSlsjSlpOfCUVe0M8YwxxFU11cjgzGxBhDyMOGFgJDA0yaFF7CT4VHThHKHIzd2UxQWgfY01hJTVRP0FaW1Q4NmdBEXUmCQg3LGBwVxlRExpceEdXeiwcEXhuJVMOEFxAQ2llbQwtUlFRS2IPHxo0aQteTA==Yp6qSQ==; __zzatgib-w-hh=MDA0dC0jViV+FmELHw4/aQsbSl1pCENQGC9LXzAxQSFPYnkVJ0ZaTjZZSxQwKFYLPA4URXVue11CZ08YOVURCxIXRF5cVWl1FRpLSiVueCplJS0xViR8SylEXFB5JhwTe3IoUAoNVy8NPjteLW8PKhMjZHYhP04hC00+KlwVNk0mbjN3RhsJHlksfEspNQ5SNVkfRn1zWE9/QV1ERCt4KzxpHR1MXVVIDwkIW09CfygpDDwNGXMzaWVpcC9gIBIlEU1HGEVkW0I2KBVLcU8cenZffSpCaB1gSlsjSlpOfCUVe0M8YwxxFU11cjgzGxBhDyMOGFgJDA0yaFF7CT4VHThHKHIzd2UxQWgfY01hJTVRP0FaW1Q4NmdBEXUmCQg3LGBwVxlRExpceEdXeiwcEXhuJVMOEFxAQ2llbQwtUlFRS2IPHxo0aQteTA==Yp6qSQ==; _ym_isad=2; domain_sid=cl4veFYfCor1OA9FIG6M9%3A1731676899013; hhul=22fddb5cca1e231f09de3e24b82e1da60616e07cb9fbb24baa75b88639beadaa; hhtoken=eEV4cHRmXLOZAm8O4hcWXkG!W!RF; cookie_policy_agreement=true; uxs_uid=9d9c27b0-7b0e-11ef-9408-e19c55aaf248; _ym_d=1727248799; _ym_uid=1727248799780760617; iap.uid=2b66961903a443448d83d30714083306; redirect_host=podolsk.hh.ru; __ddg1_=UbAkC4KY48EaSK27M0vA; region_clarified=NOT_SET",
+						"type": "text"
+					},
+					{
+						"key": "Priority",
+						"value": "u=3, i",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://podolsk.hh.ru/vacancy/109018799?hhtmFrom=vacancy_search_list",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15",
+						"type": "text"
+					},
+					{
+						"key": "X-GIB-FGSSCgib-w-hh",
+						"value": "nLkEe08f61ff84850b6e83a893c5ff195151d20e",
+						"type": "text"
+					},
+					{
+						"key": "X-GIB-GSSCgib-w-hh",
+						"value": "ut84P/aD0N5fXIZszP6L7yTWOiVJTKSK5naNk8wYTItjNuea8b/Ji116hGgPIuKvm7FbqFzjVBBNj0kdyzT4pcO9jH43Z6nBgMiTB2kh63rqSZX1/yacv/SV6zhCDqcqduyjuPz82VrL9XZmHBdmHfQWCe5M6h2AczTq/VcyJ18RyPZnJud1I6Ju/2MF7zTKd4/i/N2bUd2Fi4bNo8bILpIB9vWcucxJa2DLL0mRRAzPSvcw3zmmPLQxkxZRBr0+mcHV9LVzgtUW/B5z3w==",
+						"type": "text"
+					},
+					{
+						"key": "X-hhtmFrom",
+						"value": "vacancy_search_list",
+						"type": "text"
+					},
+					{
+						"key": "X-hhtmSource",
+						"value": "vacancy",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "X-Xsrftoken",
+						"value": "0720ae87768840fee1993198a82bf39b",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://podolsk.hh.ru/tracking/view_contacts?vacancy_id=109018799&employer_id=5472277&place=vacancy_bottom_button&scheme=https&authority=podolsk.hh.ru&path=/tracking/view_contacts?vacancy_id=109018799%26employer_id=5472277%26place=vacancy_bottom_button",
+					"protocol": "https",
+					"host": [
+						"podolsk",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"tracking",
+						"view_contacts"
+					],
+					"query": [
+						{
+							"key": "vacancy_id",
+							"value": "109018799"
+						},
+						{
+							"key": "employer_id",
+							"value": "5472277"
+						},
+						{
+							"key": "place",
+							"value": "vacancy_bottom_button"
+						},
+						{
+							"key": "scheme",
+							"value": "https"
+						},
+						{
+							"key": "authority",
+							"value": "podolsk.hh.ru"
+						},
+						{
+							"key": "path",
+							"value": "/tracking/view_contacts?vacancy_id=109018799&employer_id=5472277&place=vacancy_bottom_button"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
